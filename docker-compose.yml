@@ -3,6 +3,7 @@ version: '2'
 services:
 # Define a Telegraf service
     linux:
+        name: linux
         build: ./build
         volumes:
                 - ./conf:/tmp/conf
