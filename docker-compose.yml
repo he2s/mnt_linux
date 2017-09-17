@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+# Define a Telegraf service
+    linux:
+        build: ./build
+        volumes:
+                - ./conf:/tmp/conf
+                - ./share:/tmp/share
+        ports:
+            - "2229:22"
