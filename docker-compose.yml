@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-# Define a Telegraf service
     linux:
-            # name: linux
+        # name: mnt_linux
         build: ./build
         volumes:
-                - ./conf:/tmp/conf
-                - ./share:/tmp/share
+                - "./conf:/tmp/conf"
+                - "./share:/tmp/share"
         ports:
             - "2229:22"
+
