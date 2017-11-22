@@ -1,0 +1,1 @@
+sudo docker run -ti --privileged --net=container:a79 --pid=host --cap-add sys_admin --cap-add sys_ptrace -e sysimage=/host -v /:/host -v /dev:/dev -v /run:/run mnt_linux /bin/bash
